@@ -1,0 +1,148 @@
+{
+  "Print to react component by typescript": {
+    "prefix": "tsmcp",
+    "body": [
+      "import { FC } from 'react'",
+      "",
+      "interface ${1:index}Props {}",
+      "",
+      "export const ${1:index}:FC<${1:index}Props> = (${2}) => {",
+      "  return <${3:div}>${1:index}</${3:div}>",
+      "}"
+    ],
+    "description": "My snippet react component with TS"
+  },
+  "Print to react component by typescript with export default": {
+    "prefix": "tsmcpdf",
+    "body": [
+      "import { FC } from 'react'",
+      "",
+      "interface ${1:index}Props {}",
+      "",
+      "const ${1:index}:FC<${1:index}Props> = (${2}) => {",
+      "  return <div>${1:index}</div>",
+      "}",
+      "",
+      "export default ${1:index}"
+    ],
+    "description": "My snippet react component with TS"
+  },
+  "Print to layout react component by typescript in NextJs": {
+    "prefix": "tsmlcp",
+    "body": [
+      "import { Metadata } from 'next'",
+      "import { FC, ReactNode } from 'react'",
+      "",
+      "interface ${1:index}Props {",
+      "  children: ReactNode",
+      "}",
+      "",
+      "export const metadata: Metadata = {${2}}",
+      "",
+      "const ${1:index}:FC<${1:index}Props> = ({ children }) => {",
+      "  return <>{children}</>",
+      "}",
+      "",
+      "export default ${1:index}"
+    ],
+    "description": "My snippet layout react component with TS in NextJs"
+  },
+  "Print to react component with ref by typescript": {
+    "prefix": "tsmcpr",
+    "body": [
+      "import type { HTMLAttributes } from 'react'",
+      "import { forwardRef } from 'react'",
+      "",
+      "interface ${1:index}Props extends HTMLAttributes<HTMLElement> {}",
+      "",
+      "const ${1:index} = forwardRef<HTMLElement, ${1:index}Props>((${2:props}, ref) => {",
+      "  return <div>${1:index}</div>",
+      "})",
+      "",
+      "export default ${1:index}"
+    ],
+    "description": "My snippet react component with TS"
+  },
+  "Print to next page component by typescript": {
+    "prefix": "tsmnpc",
+    "body": [
+      "import { MetaHead } from \"@/components/layouts/metahead\"",
+      "",
+      "const ${1:index}Page = () => {",
+      "  return (",
+      "     <>",
+      "       <MetaHead title=\"${1:index}\" />",
+      "       <div className=\"\">${1:index}Page</div>",
+      "     </>",
+      " )",
+      "}",
+      "",
+      "export default ${1:index}Page"
+    ],
+    "description": "My snippet next page component with TS"
+  },
+  "Print to zustand hook by typescript": {
+    "prefix": "tszt",
+    "body": [
+      "import { create } from \"zustand\"",
+      "import { devtools } from \"zustand/middleware\"",
+      "",
+      "export interface ${1:index}StoreProps {${2}}",
+      "",
+      "export const use${1:index}Store = create<${1:index}StoreProps>()(",
+      "  devtools((set, get) => {",
+      "    return {${3}}",
+      "  }),",
+      ")"
+    ],
+    "description": "My snippet zustand hook with TS"
+  },
+  "Print to zustand hook with persist by typescript": {
+    "prefix": "tsztp",
+    "body": [
+      "import { create } from \"zustand\"",
+      "import { persist, devtools } from \"zustand/middleware\"",
+      "",
+      "export interface ${1:index}StoreProps {${2}}",
+      "",
+      "export const use${1:index}Store = create<${1:index}StoreProps>()(",
+      "  devtools(",
+      "    persist(",
+      "      (set, get) => {",
+      "        return {${3}}",
+      "      },",
+      "      {",
+      "        name: \"\",",
+      "      },",
+      "    ),",
+      "  ),",
+      ")"
+    ],
+    "description": "My snippet zustand hook with TS"
+  },
+  "Print useState hook": {
+    "prefix": "tsust",
+    "body": ["const [${1}, set${2}] = useState<${3}>(${4})"],
+    "description": "My snippet useState hook with TS"
+  },
+  "Print useEffect hook": {
+    "prefix": "tsuef",
+    "body": ["  useEffect(() => {", "    ${1}", "  }, [])"],
+    "description": "My snippet useEffect hook with TS"
+  },
+  "Print styled component with MUI has theme props": {
+    "prefix": "muist",
+    "body": ["const ${1:Styled} = styled(${2:'div'})(({theme}) => ({", "$3", "}))"],
+    "description": "My snippet styled component in MUI"
+  },
+  "Print styled component with MUI": {
+    "prefix": "muis",
+    "body": ["const ${1:Styled} = styled(${2:'div'})(({theme}) => ({", "$3", "}))"],
+    "description": "My snippet styled component in MUI"
+  },
+  "Print to custom hook": {
+    "prefix": "tshook",
+    "body": ["", "export const use${1:Hook} = (${2}) => {", "  ${3}", " return {}", "}"],
+    "description": "Print to custom hook with ts"
+  }
+}

@@ -1,0 +1,16 @@
+stages:
+  - build
+  - deploy
+.Tags: &tags
+  - moonlab-runner
+.deployBranch: &deployBranch
+  - develop
+  - production
+# include
+include:
+  - local: "/.gitlab/ci_templates/deploy_dev_jobs.yml"
+    rules:
+      - if: $CI_COMMIT_BRANCH == "develop"
+  - local: "/.gitlab/ci_templates/deploy_prod_jobs.yml"
+    rules:
+      - if: $CI_COMMIT_BRANCH == "production"

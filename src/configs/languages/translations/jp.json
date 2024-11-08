@@ -1,0 +1,5 @@
+{
+  "Hello World": "こんにちは世界",
+  "Hello. My name is ": "こんにちは。私の名前は <0>{{name}}</0>",
+  "I'm {{years}} years old": "私は{{years}}歳です"
+}

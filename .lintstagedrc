@@ -1,0 +1,3 @@
+{
+  "**/*.{ts,tsx,jsx}": ["yarn format", "yarn lint", "git add -A"]
+}

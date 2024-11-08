@@ -1,0 +1,18 @@
+{
+  "Hello World": "Hello World",
+  "Hello. My name is ": "Hello. My name is <0>{{name}}</0>",
+  "I'm {{years}} years old": "I'm {{years}} years old",
+  "Confirm": "Confirm",
+  "Waiting for confirmation": "Waiting for confirmation",
+  "Confirm this transaction in your wallet": "Confirm this transaction in your wallet",
+  "Pending": "Pending",
+  "Transaction is processing": "Transaction is processing",
+  "View transaction": "View transaction",
+  "Success": "Success",
+  "Error": "Error",
+  "Try Again": "Try Again",
+  "Failed to get nonce": "Failed to get nonce",
+  "Please confirm the sign message on your wallet to log in": "Please confirm the sign message on your wallet to log in",
+  "Logged in successfully": "Logged in successfully",
+  "Sign message failed": "Sign message failed"
+}

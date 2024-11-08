@@ -1,0 +1,14 @@
+{
+  "Hello World": "你好世界",
+  "Hello. My name is ": "你好。我的名字是 <0>{{name}}</0>",
+  "I'm {{years}} years old": "我{{years}}岁",
+  "Confirm": "确认",
+  "Waiting for confirmation": "等待确认中",
+  "Confirm this transaction in your wallet": "在您的钱包中确认此交易",
+  "Pending": "待办的",
+  "Transaction is processing": "交易正在处理中",
+  "View transaction": "查看交易",
+  "Success": "成功",
+  "Error": "错误",
+  "Try Again": "再试一次"
+}

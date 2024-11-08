@@ -1,0 +1,41 @@
+.swal2-container {
+  transition: 0.3s !important;
+  .swal2-popup,
+  .swal2-modal {
+    @apply bg-component space-y-4 rounded p-0 shadow;
+    :not([hidden]) ~ :not([hidden]) ~ :not(.swal2-icon) {
+      @apply m-0;
+    }
+    .swal2-icon {
+      @apply order-2 mx-auto my-0;
+    }
+    .swal2-title {
+      @apply text-content order-1 text-left text-xl font-medium;
+    }
+    .swal2-close {
+      @apply text-muted hover:text-content absolute h-14 w-14 text-xl focus:shadow-none;
+    }
+    .swal2-html-container {
+      @apply text-content order-3 p-6 text-left text-base;
+    }
+    .swal2-actions {
+      @apply order-4 m-0 flex flex-row-reverse gap-2 px-4 pb-6;
+      button {
+        @apply tw-btn tw-btn-normal tw-btn-md m-0 focus:shadow-none focus:outline-none;
+      }
+      .swal2-confirm {
+        @apply tw-btn-primary flex-1;
+      }
+      .swal2-cancel {
+        @apply tw-btn-primary-outlined flex-1 border border-solid bg-transparent;
+      }
+      .swal2-deny {
+        @apply tw-btn-primary-outlined w-full border border-solid bg-transparent;
+      }
+    }
+  }
+}
+
+.swal2-shown {
+  padding: 0 !important;
+}
