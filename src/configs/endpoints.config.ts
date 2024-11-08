@@ -3,7 +3,7 @@ import { ENV, Env } from "./env.config"
 export const API_URLS = <const>{
   [Env.development]: "https://phim.nguonc.com/api/films",
   [Env.staging]: "",
-  [Env.production]: "",
+  [Env.production]: "https://phim.nguonc.com/api/films",
 }
 
 export const API_URLS_FOR_CHAINS = {

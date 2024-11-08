@@ -7,6 +7,7 @@ import HomePage from "@/pages/home"
 import NotFoundPage from "@/pages/not-found"
 import TestPage from "@/pages/test"
 import TranslationPage from "@/pages/translation"
+import DetailMovie from "@/views/example/movie/detail-movie"
 import { routePath } from "./routes"
 
 interface AppRoutesProps {}
@@ -19,6 +20,7 @@ const routes: RouteObject[] = [
       { path: routePath.home, element: <HomePage /> },
       { path: routePath.translation, element: <TranslationPage /> },
       { path: routePath.test, element: <TestPage /> },
+      { path: routePath.detailMovie, element: <DetailMovie /> },
     ],
   },
 

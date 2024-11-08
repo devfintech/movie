@@ -5,6 +5,7 @@ export const routePath = {
   translation: "/translation",
   comingSoon: "/coming-soon",
   test: "/test",
+  detailMovie: "/detail-movie",
   notFound: "*",
 } as const
 
